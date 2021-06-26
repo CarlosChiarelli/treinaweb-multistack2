@@ -40,14 +40,22 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'easy_mask',
-    'web'
+    # permite requisicao mobile
+    'corsheaders',
+    'web',
+    'api'
 ]
+
+# permite requisicao mobile
+CORS_ALLOW_ALL_ORIGINS = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    # permite requisicao mobile
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

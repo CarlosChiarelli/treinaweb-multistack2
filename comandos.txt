@@ -13,3 +13,9 @@ Abaixo criamos a tabela definida em models.
 python manage.py makemigrations
 python manage.py migrate
 ```
+
+Abaixo criando a API REST.
+
+```sh
+python manage.py startapp api
+```
