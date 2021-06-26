@@ -1,0 +1,15 @@
+# Iniciando projeto
+
+```sh
+django-admin startproject ediaristas_workshop
+cd ediaristas_workshop
+python manage.py startapp web
+python manage.py runserver
+```
+
+Abaixo criamos a tabela definida em models.
+
+```sh
+python manage.py makemigrations
+python manage.py migrate
+```
